@@ -1,0 +1,377 @@
+
+Cadence Tempus(TM) Timing Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+Options:	
+Date:		Sat Oct 18 15:05:07 2025
+Host:		CICS19.kletech.ac.in (x86_64 w/Linux 4.18.0-553.76.1.el8_10.x86_64) (16cores*24cpus*13th Gen Intel(R) Core(TM) i7-13700 30720KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[15:05:07.085395] Configured Lic search path (21.01-s002): 5280@10.3.0.68:5280@10.3.0.45:27020@10.3.0.45
+
+		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (30 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_217198_EJor2q'.
+<CMD> read_lib {/tech/libraries/RAK_LIBS/lib/max/slow.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_32768d_33w_16m_8b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_16384d_36w_16m_8b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_512d_32w_4m_2b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_136d_74w_1m_4b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_512d_76w_2m_4b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_256d_76w_1m_4b.lib}
+<CMD> set_global timing_apply_default_primary_input_assertion false
+<CMD> read_verilog /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.v
+<CMD> set_top_module cpu_sys_emep_top
+#% Begin Load MMMC data ... (date=10/18 15:05:34, mem=1224.5M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=10/18 15:05:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1225.9M, current mem=1225.9M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_217198.tcl
+Reading default_emulate_libset_max timing library '/tech/libraries/RAK_LIBS/lib/max/slow.lib' ...
+Read 477 cells in library 'gpdk045bc' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_32768d_33w_16m_8b.lib' ...
+Read 1 cells in library 'sram_sp_32768d_33w_16m_8b' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_16384d_36w_16m_8b.lib' ...
+Read 1 cells in library 'sram_sp_16384d_36w_16m_8b' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_512d_32w_4m_2b.lib' ...
+Read 1 cells in library 'sram_sp_512d_32w_4m_2b' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_136d_74w_1m_4b.lib' ...
+Read 1 cells in library 'rf_2p_136d_74w_1m_4b' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_512d_76w_2m_4b.lib' ...
+Read 1 cells in library 'rf_2p_512d_76w_2m_4b' 
+Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_256d_76w_1m_4b.lib' ...
+Read 1 cells in library 'rf_2p_256d_76w_1m_4b' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=42.0M, fe_cpu=0.17min, fe_real=0.45min, fe_mem=1359.8M) ***
+#% Begin Load netlist data ... (date=10/18 15:05:34, mem=1234.1M)
+*** Begin netlist parsing (mem=1359.8M) ***
+Reading verilog netlist '/home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.v'
+
+*** Memory Usage v#1 (Current mem = 1836.812M, initial mem = 618.484M) ***
+*** End netlist parsing (cpu=0:00:01.9, real=0:00:02.0, mem=1836.8M) ***
+#% End Load netlist data ... (date=10/18 15:05:36, total cpu=0:00:02.1, real=0:00:02.0, peak res=1685.4M, current mem=1671.9M)
+Set top cell to cpu_sys_emep_top.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell cpu_sys_emep_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 5308 modules.
+** info: there are 303355 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2361.258M, initial mem = 618.484M) ***
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:14.9, real=0:00:30.0, peak res=2416.5M, current mem=2416.5M)
+Total number of combinational cells: 316
+Total number of sequential cells: 150
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+Total number of usable buffers: 8
+List of unusable buffers: CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+Total number of unusable buffers: 8
+List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+Total number of usable inverters: 10
+List of unusable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+Total number of unusable inverters: 9
+List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY4X4 DLY3X1
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc
+Current (total cpu=0:00:15.2, real=0:00:31.0, peak res=2447.3M, current mem=2327.5M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 8).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 9).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 10).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 11).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 12).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 13).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 14).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 15).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 16).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 17).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 18).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 19).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 20).
+
+**WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/atfrtc010/CTL/clk_sel' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 21).
+
+**WARN: (TCLCMD-1142):	Virtual clock 'HPC_CLK_VIR' is being created with no source objects. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 32).
+
+**WARN: (TCLCMD-1142):	Virtual clock 'GPIO_CLK_VIR' is being created with no source objects. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 33).
+
+**WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 36).
+
+**WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 37).
+
+**WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_04/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 42).
+
+**WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[39]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+
+**WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[38]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+
+**WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[37]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+
+**WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[36]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+
+Message <TCLCMD-1531> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+
+Number of path exceptions in the constraint file = 137
+INFO (CTE): Reading of timing constraints file /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc completed, with 23 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.2, real=0:00:00.0, peak res=2344.5M, current mem=2344.5M)
+Current (total cpu=0:00:15.3, real=0:00:31.0, peak res=2447.3M, current mem=2344.5M)
+<CMD> report_clock_timing -type summary > $run_dir/clock_summary.rpt
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2786.71 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: cpu_sys_emep_top
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=2930.09)
+/dev/null
+End delay calculation. (MEM=3327.97 CPU=0:00:15.1 REAL=0:00:15.0)
+End delay calculation (fullDC). (MEM=3327.97 CPU=0:00:17.5 REAL=0:00:17.0)
+<CMD> set_global report_timing_format {hpin cell arc slew load delay arrival}
+<CMD> check_timing -verbose -type {loops inputs endpoints clocks constant_collision clock_gating_inferred clock_clipping} -include_warning clocks_masked_by_another_clock > $run_dir/check_timing_verbose.rpt
+<CMD> check_timing -check_only {clock_crossing} -verbose > $run_dir/clock_crossings.rpt
+<CMD> report_clocks -groups > $run_dir/report_clock_groups.rpt
+<CMD> report_constraint -all_violators > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_18Oct2025/run_1/report_allViolators.rpt
+Loading  (cpu_sys_emep_top)
+Traverse HInst (cpu_sys_emep_top)
+REFCLK0 SWCLK MCUCLK LIFE_CLK JTAG_CLK JTAG_CLK_C2C DBG_CLK MII_TXCLK MII_RXCLK SPI_CLK_IN HPC_CLK_VIR GPIO_CLK_VIR SWCLK_DIV2 SWCLK_DIV4 CPU_CLK APB_CLK SPI_CLK RMII_CLK MII_CLK RTC_ECLK FUSE_CLK EEP_TCLK EEP_PCLK DSP_PCLK
+<CMD> report_clocks 
+      --------------------------------------------------------------------------------------------------  
+                                                 Clock Descriptions                                             
+      --------------------------------------------------------------------------------------------------  
+                                                                                       Attributes          
+      --------------------------------------------------------------------------------------------------  
+        Clock Name                Source               Period    Lead    Trail   Generated   Propagated   
+      --------------------------------------------------------------------------------------------------  
+       APB_CLK      U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q                       
+                                                      8.000   0.000    4.000       y           n        
+       CPU_CLK      U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y                       
+                                                      4.000   0.000    2.000       y           n        
+       DBG_CLK              io_in_bus[36]            16.000   0.000    8.000       n           n        
+       DSP_PCLK     U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                       
+                                                      2.000   0.000    1.000       y           n        
+       EEP_PCLK     U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                       
+                                                      2.000   0.000    1.000       y           n        
+       EEP_TCLK     U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                       
+                                                      2.000   0.000    1.000       y           n        
+       FUSE_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_04/Y                       
+                                                     80.000   0.000   40.000       y           n        
+       GPIO_CLK_VIR                 -                   8.000   0.000    4.000       n           n        
+        HPC_CLK_VIR                 -                   8.000   0.000    4.000       n           n        
+       JTAG_CLK             io_in_bus[28]            20.000   0.000   10.000       n           n        
+       JTAG_CLK_C2C         ext_die_jtag_tck_i         20.000   0.000   10.000       n           n        
+       LIFE_CLK           pll0_cmu_life_clk          10.000   0.000    5.000       n           n        
+        MCUCLK             pll0_cmu_ck_aux            3.003   0.000    1.502       n           n        
+       MII_CLK      U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_mii_clkdivby2_reg/U_clk_dff/Q                       
+                                                     32.000   0.000   16.000       y           n        
+      MII_RXCLK             io_in_bus[22]            16.000   0.000    8.000       n           n        
+      MII_TXCLK             io_in_bus[21]            16.000   0.000    8.000       n           n        
+       REFCLK0             pll0_cmu_ck_ref            8.000   0.000    4.000       n           n        
+       RMII_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_rmii_clkdivby2_reg/U_clk_dff/Q                       
+                                                     16.000   0.000    8.000       y           n        
+       RTC_ECLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_rtc_eclkdivby2_reg/U_clk_dff/Q                       
+                                                     64.000   0.000   32.000       y           n        
+       SPI_CLK      U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_spi_clkdivby2_reg/U_clk_dff/Q                       
+                                                      8.000   0.000    4.000       y           n        
+      SPI_CLK_IN            io_in_bus[65]            16.000   0.000    8.000       n           n        
+        SWCLK              pll0_cmu_ck_soc            1.000   0.000    0.500       n           n        
+      SWCLK_DIV2    U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_0_reg/U_clk_dff/Q                       
+                                                      2.000   0.000    1.000       y           n        
+      SWCLK_DIV4    U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_1_reg/U_clk_dff/Q                       
+                                                      4.000   0.000    2.000       y           n        
+      --------------------------------------------------------------------------------------------------  
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------  
+                                                                                Generated-Clock Descriptions                                                                            
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------  
+          Name          Generated Source(pin)              Master Source(pin)         Master-clock   Source   Invert     Freq.      Duty-Cycle   Edges   Edge-Shift   
+                                                                                                     Invert            Multiplier                                     
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------  
+      APB_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q                                   
+                                                   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y                               
+                                                                                      CPU_CLK        n        n         1/2           50         -         -        
+      CPU_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y                                   
+                                                   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_1_reg/U_clk_dff/Q                               
+                                                                                     SWCLK_DIV4      n        n         1/1           50         -         -        
+      DSP_PCLK    U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_soc              SWCLK         n        n         1/2           50         -         -        
+      EEP_PCLK    U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_soc              SWCLK         n        n         1/2           50         -         -        
+      EEP_TCLK    U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_soc              SWCLK         n        n         1/2           50         -         -        
+      FUSE_CLK    U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_04/Y                                   
+                                                         pll0_cmu_life_clk            LIFE_CLK       n        n         1/8           50         -         -        
+      MII_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_mii_clkdivby2_reg/U_clk_dff/Q                                   
+                                                   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_rmii_clkdivby2_reg/U_clk_dff/Q                               
+                                                                                      RMII_CLK       n        n         1/2           50         -         -        
+      RMII_CLK    U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_rmii_clkdivby2_reg/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_ref             REFCLK0        n        n         1/2           50         -         -        
+      RTC_ECLK    U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_rtc_eclkdivby2_reg/U_clk_dff/Q                                   
+                                                   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_mii_clkdivby2_reg/U_clk_dff/Q                               
+                                                                                      MII_CLK        n        n         1/2           50         -         -        
+      SPI_CLK     U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_spi_clkdivby2_reg/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_soc              SWCLK         n        n         1/8           50         -         -        
+       SWCLK_DIV2   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_0_reg/U_clk_dff/Q                                   
+                                                          pll0_cmu_ck_soc              SWCLK         n        n         1/2           50         -         -        
+       SWCLK_DIV4   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_1_reg/U_clk_dff/Q                                   
+                                                   U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_sw_clkdivby2_0_reg/U_clk_dff/Q                               
+                                                                                     SWCLK_DIV2      n        n         1/2           50         -         -        
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------  
+REFCLK0 SWCLK MCUCLK LIFE_CLK JTAG_CLK JTAG_CLK_C2C DBG_CLK MII_TXCLK MII_RXCLK SPI_CLK_IN HPC_CLK_VIR GPIO_CLK_VIR SWCLK_DIV2 SWCLK_DIV4 CPU_CLK APB_CLK SPI_CLK RMII_CLK MII_CLK RTC_ECLK FUSE_CLK EEP_TCLK EEP_PCLK DSP_PCLK
+
+Usage: all_clocks [-help]
+
+-help  # Prints out the command usage
+
+
+
+Usage: all_clocks [-help]
+
+-help  # Prints out the command usage
+
+
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing int value for option "-pin_levels".  
+
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-6):	Missing int value for option "-pin_levels".  
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff'
+**ERROR: (TCLCMD-917):	Cannot find 'pins, ports or nets' that match 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff'
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y
+Loading U_cpu_sys_top (cpu_sys_emep_top_cpu_sys_top)
+Traverse HInst U_cpu_sys_top(cpu_sys_emep_top_cpu_sys_top)
+<CMD> deselectObject Module U_cpu_sys_top/u_swtop_port_dec
+<CMD> selectObject Module U_cpu_sys_top/u_swtop_port_dec
+<CMD> deselectObject Module U_cpu_sys_top/u_swtop_port_dec
+<CMD> selectObject Module U_cpu_sys_top/u_swtop_port_dec
+Loading U_cpu_sys_top/u_swtop_port_dec (cpu_sys_emep_top_swtop_port_dec)
+Traverse HInst U_cpu_sys_top/u_swtop_port_dec(cpu_sys_emep_top_swtop_port_dec)
+<CMD> selectObject Module U_cpu_sys_top/u_swtop_port_dec/U_swtop_part_upid_dec_part0_2_
+Loading U_cpu_sys_top/u_swtop_port_dec/U_swtop_part_upid_dec_part0_2_ (cpu_sys_emep_top_swtop_part_upid_dec_21)
+Traverse HInst U_cpu_sys_top/u_swtop_port_dec/U_swtop_part_upid_dec_part0_2_(cpu_sys_emep_top_swtop_part_upid_dec_21)
+<CMD> stop_gui
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/CK
+U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_apb_clkdivby2_reg/U_clk_dff/Q U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_MUX_02/U_clk_mux/A U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_MUX_02/U_clk_mux/Y U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_cmd_fifo/rd_ptr_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_cmd_fifo/empty_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_cmd_fifo/rd_ptr_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_wdata_fifo/empty_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_wdata_fifo/rd_ptr_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/u_wdata_fifo/rd_ptr_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/wr_data_entering_fifo_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/paddr_miss_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/penable_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/wbuf_en_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/APBBrg_sec/rd_cmd_entering_fifo_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST454/RC_CGIC_INST/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST454/RC_CGIC_INST/ECK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_2_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_3_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_APBIF/prdata_r_reg_7_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_INTR/txfifo_empty_intr_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_INTR/txfifo_empty_intr_d2_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_INTR/fifo_timeout_intr_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_INTR/pthr_empty_intr_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/cts_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/cts_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/dcd_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/dcd_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/ri_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/ri_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/dsr_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/dsr_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/delta_cts_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/delta_dcd_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/delta_dsr_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_MODEM/trail_ri_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_PSD/U_CLK_MUX_00/U_clk_mux/B U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_PSD/U_CLK_MUX_00/U_clk_mux/Y U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST455/RC_CGIC_INST/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST455/RC_CGIC_INST/ECK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_10_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_15_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_14_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_13_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_12_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_11_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_9_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_8_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_7_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_3_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_2_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/bd_count_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/reg_dll_wen_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/reg_dll_wen_d2_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/reg_dlm_wen_d1_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/reg_dlm_wen_d2_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_BAUDGEN/int_bdout_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCPCLK/u_load_tsr_syncell/q1_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCPCLK/u_time_out_wen_syncell/q1_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCPCLK/u_write_rxfifo_syncell/q1_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_dll_wen_syncell/q2_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_dll_wen_syncell/q3_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_dlm_wen_syncell/q2_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_dlm_wen_syncell/q3_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_rbr_ren_syncell/q2_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/u_reg_rbr_ren_syncell/q3_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sync1_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sycu_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sync1_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sycu_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/rxdata_rdy_sync1_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/rxdata_rdy_sycu_r_reg/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sync1_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sycu_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sync1_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sycu_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sync1_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dll_sycu_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_0_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_1_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_2_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_2_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_4_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_5_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sync1_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_dlm_sycu_r_reg_6_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sync1_r_reg_3_/CK U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/uart1/U_SYNCUCLK/reg_lcr_sycu_r_reg_3_/CK ...
+pll0_cmu_ck_soc
+pll0_cmu_ck_soc sw_clk_o U_emep_top/i_emep_top_clk_rst_gen/ep_core_pl_rate_r_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/ep_core_pl_rate_d1_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/ep_core_pl_rate_r_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/ep_core_pl_rate_d1_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/ds_port_pl_rate_r_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/ds_port_pl_rate_d1_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/ds_port_pl_rate_r_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/ds_port_pl_rate_d1_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_sync_swtop_final_reset_n/sync_rst_reg_r_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_sync_swtop_final_reset_n/sync_rst_reg_r_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/i_sync_master_reset_n/sync_rst_reg_r_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_sync_master_reset_n/sync_rst_reg_r_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cntr_reg_3_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cntr_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cntr_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cntr_reg_2_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_changed_reg/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_d_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_d_reg_2_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_d_reg_3_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_d_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_sync_div_en/signal_synched_reg/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_sync_div_en/signal_in_d1_reg/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_pcie_sw_clk_dff/U_clk_dff/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST150/RC_CGIC_INST/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST150/RC_CGIC_INST/ECK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_r_reg_0_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_r_reg_1_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_r_reg_2_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_r_reg_3_/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/CK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/A U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_equ_req/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_equ_req/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_equ_req/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_equ_req/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_equ_req/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_receiver_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_receiver_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_receiver_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_receiver_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_receiver_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_replay_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_replay_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_replay_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_replay_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_replay_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_rxufc_ack/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_rxufc_ack/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_rxufc_ack/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_rxufc_ack/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_0__resync_rxufc_ack/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_equ_req/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_equ_req/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_equ_req/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_equ_req/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_equ_req/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_receiver_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_receiver_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_receiver_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_receiver_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_receiver_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_replay_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_replay_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_replay_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_replay_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_replay_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_rxufc_ack/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_rxufc_ack/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_rxufc_ack/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_rxufc_ack/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_2bits_1__resync_rxufc_ack/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pipe_lane_0__resync_rxeitl/gcdc_slowbit_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pipe_lane_1__resync_rxeitl/gcdc_slowbit_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_1rtp_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_1rtp_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_1rtp_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_1rtp_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_1rtp_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_2rtp_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_2rtp_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_2rtp_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_2rtp_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_2rtp_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lane_error/gcdc_pulse_req_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lane_error/gcdc_pulse_init_out_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lane_error/gcdc_pulse_init_out_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lane_error/gcdc_pulse_ack_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lane_error/gcdc_pulse_pulse_out_reg/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST0/RC_CGIC_INST/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/cpu_sys_emep_top_RC_CG_RC_CG_HIER_INST0/RC_CGIC_INST/ECK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/gcdc_vector_data_out_rr_reg_10_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/gcdc_vector_data_out_rr_reg_11_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/gcdc_vector_data_out_rr_reg_12_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/gcdc_vector_data_out_rr_reg_13_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/g_pl_lane_0__resync_lmr_status/gcdc_vector_data_out_rr_reg_14_/CK ...
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-48):	"U_cpu_sys_top/U318" is not a legal option for command "all_fanin". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-48):	"U_cpu_sys_top/U318" is not a legal option for command "all_fanin". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-48):	"U_cpu_sys_top/U318/A0" is not a legal option for command "all_fanin". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-48):	"U_cpu_sys_top/U318/A0" is not a legal option for command "all_fanin". Either the current option or an option prior to it is not specified correctly.
+
+
+Usage: all_fanin [-help] [-hpin] [-only_cells] [-startpoints_only] -to {collection | object_list} [-trace_through {case_disable|user_disable|all|clocks|loop_snipped|latches}] [-view <view_name>] [-levels <value> | -pin_levels <value>] [ > | >> ]
+
+**ERROR: (IMPTCM-48):	"U_cpu_sys_top/U_gpio_glbl_mux/U1574/B0" is not a legal option for command "all_fanin". Either the current option or an option prior to it is not specified correctly.
+
+U_cpu_sys_top/U_gpio_glbl_mux/U1574/B0 U_cpu_sys_top/U_gpio_glbl_mux/U1576/Y U_cpu_sys_top/U_gpio_glbl_mux/U1576/C0 U_cpu_sys_top/U_gpio_glbl_mux/U3450/Y U_cpu_sys_top/U_gpio_glbl_mux/U3450/B1 U_cpu_sys_top/U_gpio_glbl_mux/U3844/Y U_cpu_sys_top/U_gpio_glbl_mux/U3844/B U_cpu_sys_top/U_gpio_glbl_mux/U2287/Y U_cpu_sys_top/U_gpio_glbl_mux/U2287/B U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_1_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_1_/CK U_cpu_sys_top/U_gpio_glbl_mux/U2287/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_0_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_0_/CK U_cpu_sys_top/U_gpio_glbl_mux/U3844/A U_cpu_sys_top/U_gpio_glbl_mux/U2570/Y U_cpu_sys_top/U_gpio_glbl_mux/U2570/A U_cpu_sys_top/U_gpio_glbl_mux/U3740/Y U_cpu_sys_top/U_gpio_glbl_mux/U3740/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_2_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_2_/CK U_cpu_sys_top/U_gpio_glbl_mux/U3450/B0 U_cpu_sys_top/U1756/Y U_cpu_sys_top/U1756/B U_cpu_sys_top/U144/Y U_cpu_sys_top/U144/D U_cpu_sys_top/U1757/Y U_cpu_sys_top/U1757/B1 U_cpu_sys_top/U2657/Y U_cpu_sys_top/U2657/A U_cpu_sys_top/U2658/Y U_cpu_sys_top/U2658/A U_cpu_sys_top/U2660/Y U_cpu_sys_top/U2660/A U_cpu_sys_top/U339/Y U_cpu_sys_top/U339/C U_cpu_sys_top/U1808/Y U_cpu_sys_top/U1808/B U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_3_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_3_/CK U_cpu_sys_top/U1808/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_0_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_0_/CK U_cpu_sys_top/U339/B U_cpu_sys_top/U347/Y U_cpu_sys_top/U347/B U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_4_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_4_/CK U_cpu_sys_top/U347/A U_cpu_sys_top/U1681/Y U_cpu_sys_top/U1681/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_2_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_2_/CK U_cpu_sys_top/U339/A U_cpu_sys_top/U1680/Y U_cpu_sys_top/U1680/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_1_/Q U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_1_/CK U_cpu_sys_top/U1757/B0 c2c_debug_out[26] U_cpu_sys_top/U1757/A1 U_cpu_sys_top/U2635/Y U_cpu_sys_top/U2635/A U_cpu_sys_top/U2636/Y U_cpu_sys_top/U2636/A U_cpu_sys_top/U2638/Y U_cpu_sys_top/U2638/A U_cpu_sys_top/U1801/Y U_cpu_sys_top/U1801/C U_cpu_sys_top/U1801/B U_cpu_sys_top/U1801/AN U_cpu_sys_top/U1802/Y U_cpu_sys_top/U1802/B U_cpu_sys_top/U1802/AN U_cpu_sys_top/U1757/A0 U_emep_top/i_emep_tbus/U2894/Y U_emep_top/i_emep_tbus/U2894/B0 U_emep_top/i_emep_tbus/U916/Y U_emep_top/i_emep_tbus/U916/B1 U_emep_top/i_emep_tbus/U917/Y U_emep_top/i_emep_tbus/U917/C0 U_emep_top/i_emep_tbus/U2895/Y U_emep_top/i_emep_tbus/U2895/B0 U_emep_top/i_emep_tbus/U1831/Y U_emep_top/i_emep_tbus/U1831/B U_emep_top/i_emep_tbus/U4508/Y U_emep_top/i_emep_tbus/U4508/A U_emep_top/i_emep_tbus/U4513/Y U_emep_top/i_emep_tbus/U4513/A U_emep_top/i_emep_tbus/U3490/Y U_emep_top/i_emep_tbus/U3490/B U_emep_top/i_emep_tbus/U4121/Y U_emep_top/i_emep_tbus/U4121/A U_emep_top/i_emep_tbus/U4122/Y U_emep_top/i_emep_tbus/U4122/A U_emep_top/i_emep_tbus/U2414/Y U_emep_top/i_emep_tbus/U2414/B U_emep_top/i_emep_tbus/U4040/Y U_emep_top/i_emep_tbus/U4040/A U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_18_/Q ...
+U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_1_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_0_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_gpio1_cntl_reg_sw_gpio1_xbar_ctrl_r_reg_2_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_3_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_0_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_4_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_2_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_1_/CK c2c_debug_out[26] U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_18_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_16_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_17_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_20_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_19_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_21_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_22_/CK U_cpu_sys_top/u_pcie_sw_top_cfg_reg_map/sw_final_testbus_reg_sw_testbus_mux_sel_r_reg_23_/CK U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_3_/CLKA U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_2_/CLKA U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_1_/CLKA U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rx_getpkt_reg/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/r2c_req_r_reg/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rx_torx_reg/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rx_valid_reg_7_/CK U_emep_top/i_emep_app_top/i_app_rx_top/tl_rx_wait_err_fsm_reg/CK U_emep_top/i_emep_app_top/i_app_rx_top/tl_rx_wait_err_cpl_reg/CK U_emep_top/i_emep_app_top/i_app_rx_top/tl_rx_wait_wr_fsm_reg/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_3_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_2_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_5_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_ctrl_r_reg_4_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_6_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_6_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_4_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_4_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_9_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_9_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_8_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_8_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_5_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_5_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_10_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_10_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_3_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_3_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_2_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_2_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_r_reg_7_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_cur_addr_r_reg_7_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rdinit_rr_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rdaddr_r_reg_2_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_wraddr_sync/U_sync_cell_2_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_wraddr_sync/U_sync_cell_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rdaddr_r_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_wraddr_sync/U_sync_cell_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rdaddr_r_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_11_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_11_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_5_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_5_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_7_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_7_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_4_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_4_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_9_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_9_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_6_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_6_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_3_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_3_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_8_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_8_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_dcram/rddata_reg_10_/CK U_emep_top/i_pcie_ctrl/core_inst/cdc_inst/resync_rx_tlpavail_addr/gcdc_addr_rddata_r_reg_10_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/gnordpipe_rxbuf_rden_r_reg/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/rxtl/rxvc0/rxbuf_rdaddr_p1_r_reg_8_/CK U_emep_top/i_emep_app_top/i_app_rx_top/i_pcie_sw_sram_emep_rx_top/U_pcie_sw_2pram160x82_inst_2_/CLKA U_emep_top/i_emep_app_top/i_pcie_sw_emep_core_cfg_reg_map/k_pexconf_reg5_r_reg_31_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/conf/conf0/errmgt/pois_tlp_egblk_sevunc_reg/CK U_emep_top/i_emep_app_top/i_app_rx_top/i_pcie_sw_sram_emep_rx_top/U_pcie_sw_2pram160x82_inst_3_/CLKA U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/wrptr_reg_7_/CK U_emep_top/i_pcie4_txbuf/tx_buf_x16_x8_x4_U_pcie_ip_tx_buf_1_/CLKA U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_datap_reg_508_/CK U_emep_top/i_pcie4_txbuf/tx_buf_x16_x8_x4_U_pcie_ip_tx_buf_0_/CLKA U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_datap_reg_476_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_datap_reg_446_/CK U_emep_top/i_pcie_ctrl/core_inst/dlink_inst/tlpdec_inst/shiftreg_flowp_reg_22_/CK U_emep_top/i_pcie_ctrl/core_inst/dlink_inst/tlpdec_inst/shiftreg_flowp_reg_58_/CK U_emep_top/i_pcie4_txbuf/tx_buf_x16_x8_x4_U_pcie_ip_tx_buf_2_/CLKA U_emep_top/i_pcie_ctrl/core_inst/dlink_inst/tlpdec_inst/shiftreg_flowp_reg_26_/CK U_emep_top/i_pcie4_txbuf/tx_buf_x16_x8_x4_U_pcie_ip_tx_buf_3_/CLKA U_emep_top/i_pcie_ctrl/core_inst/dlink_inst/tlpenc_inst/sr_rdptr_reg_7_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/wrptr_reg_0_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_size_reg_2_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_size_reg_1_/CK U_emep_top/i_pcie_ctrl/core_inst/trans_inst/txtl/sr_size_reg_0_/CK ...
+U_cpu_sys_top/U_gpio_glbl_mux/U1574/B0 U_cpu_sys_top/U_gpio_glbl_mux/U1576/Y U_cpu_sys_top/U_gpio_glbl_mux/U1576/C0 U_cpu_sys_top/U_gpio_glbl_mux/U1576/B1 U_cpu_sys_top/U_gpio_glbl_mux/U1576/B0 U_cpu_sys_top/U_gpio_glbl_mux/U1576/A1 U_cpu_sys_top/U_gpio_glbl_mux/U1576/A0
+U_cpu_sys_top/U_gpio_glbl_mux/U1574/B0 U_cpu_sys_top/U_gpio_glbl_mux/U1574/Y io_out_bus[9]
+REFCLK0 SWCLK MCUCLK LIFE_CLK JTAG_CLK JTAG_CLK_C2C DBG_CLK MII_TXCLK MII_RXCLK SPI_CLK_IN HPC_CLK_VIR GPIO_CLK_VIR SWCLK_DIV2 SWCLK_DIV4 CPU_CLK APB_CLK SPI_CLK RMII_CLK MII_CLK RTC_ECLK FUSE_CLK EEP_TCLK EEP_PCLK DSP_PCLK
+**ERROR: (TCLCMD-923):	Specified argument 'all_clocks' is not a valid collection
+<CMD> report_clocks > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_18Oct2025/run_1/report_clocks.rpt

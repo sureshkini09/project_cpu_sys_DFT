@@ -1,0 +1,345 @@
+[10/23 14:55:09      0s] 
+[10/23 14:55:09      0s] Cadence Tempus(TM) Timing Solution.
+[10/23 14:55:09      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/23 14:55:09      0s] 
+[10/23 14:55:09      0s] Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+[10/23 14:55:09      0s] Options:	
+[10/23 14:55:09      0s] Date:		Thu Oct 23 14:55:09 2025
+[10/23 14:55:09      0s] Host:		CICS12.kletech.ac.in (x86_64 w/Linux 4.18.0-553.76.1.el8_10.x86_64) (16cores*24cpus*13th Gen Intel(R) Core(TM) i7-13700 30720KB)
+[10/23 14:55:09      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[10/23 14:55:09      0s] 
+[10/23 14:55:09      0s] License:
+[10/23 14:55:16      0s] 		[14:55:16.085427] Configured Lic search path (21.01-s002): 5280@10.3.0.68:5280@10.3.0.45:27020@10.3.0.45
+
+[10/23 14:55:21      0s] 		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+[10/23 14:55:21      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[10/23 14:55:32      5s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+[10/23 14:55:35      8s] @(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+[10/23 14:55:35      8s] @(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/23 14:55:35      8s] @(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+[10/23 14:55:35      8s] @(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+[10/23 14:55:35      8s] @(#)CDS: CPE v22.11-e028
+[10/23 14:55:35      8s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/23 14:55:35      8s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[10/23 14:55:35      8s] @(#)CDS: RCDB 11.15.0
+[10/23 14:55:35      8s] @(#)CDS: STYLUS 22.10-p002_1 (09/01/2022 08:10 PDT)
+[10/23 14:55:35      8s] Change the soft stacksize limit to 0.2%RAM (30 mbytes). Set global soft_stack_size_limit to change the value.
+[10/23 14:55:35      8s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_25163_wBTsqV'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_25163_wBTsqV'.
+[10/23 14:55:44      9s] <CMD> read_lib {/tech/libraries/RAK_LIBS/lib/max/slow.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_32768d_33w_16m_8b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_16384d_36w_16m_8b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_512d_32w_4m_2b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_136d_74w_1m_4b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_512d_76w_2m_4b.lib /home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_256d_76w_1m_4b.lib}
+[10/23 14:55:44      9s] <CMD> set_global timing_apply_default_primary_input_assertion false
+[10/23 14:55:44      9s] <CMD> read_verilog /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.v
+[10/23 14:55:44      9s] <CMD> set_top_module cpu_sys_emep_top
+[10/23 14:55:44      9s] #% Begin Load MMMC data ... (date=10/23 14:55:44, mem=1244.2M)
+[10/23 14:55:44      9s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[10/23 14:55:45      9s] #% End Load MMMC data ... (date=10/23 14:55:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=1245.3M, current mem=1245.3M)
+[10/23 14:55:45      9s] Loading view definition file from .ssv_emulate_view_definition_25163.tcl
+[10/23 14:55:45      9s] Reading default_emulate_libset_max timing library '/tech/libraries/RAK_LIBS/lib/max/slow.lib' ...
+[10/23 14:55:45     10s] Read 477 cells in library 'gpdk045bc' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_32768d_33w_16m_8b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'sram_sp_32768d_33w_16m_8b' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_16384d_36w_16m_8b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'sram_sp_16384d_36w_16m_8b' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/sram_sp_512d_32w_4m_2b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'sram_sp_512d_32w_4m_2b' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_136d_74w_1m_4b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'rf_2p_136d_74w_1m_4b' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_512d_76w_2m_4b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'rf_2p_512d_76w_2m_4b' 
+[10/23 14:55:45     10s] Reading default_emulate_libset_max timing library '/home/01fe21bec255/DFT_LAB/project_cpu_sys/libraries/memories/rf_2p_256d_76w_1m_4b.lib' ...
+[10/23 14:55:45     10s] Read 1 cells in library 'rf_2p_256d_76w_1m_4b' 
+[10/23 14:55:45     10s] Ending "PreSetAnalysisView" (total cpu=0:00:00.4, real=0:00:00.0, peak res=1300.8M, current mem=1257.0M)
+[10/23 14:55:45     10s] *** End library_loading (cpu=0.01min, real=0.00min, mem=43.0M, fe_cpu=0.17min, fe_real=0.60min, fe_mem=1359.7M) ***
+[10/23 14:55:45     10s] #% Begin Load netlist data ... (date=10/23 14:55:45, mem=1256.0M)
+[10/23 14:55:45     10s] *** Begin netlist parsing (mem=1359.7M) ***
+[10/23 14:55:46     10s] Reading verilog netlist '/home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.v'
+[10/23 14:55:47     12s] 
+[10/23 14:55:47     12s] *** Memory Usage v#1 (Current mem = 1836.750M, initial mem = 626.484M) ***
+[10/23 14:55:47     12s] *** End netlist parsing (cpu=0:00:02.0, real=0:00:02.0, mem=1836.8M) ***
+[10/23 14:55:47     12s] #% End Load netlist data ... (date=10/23 14:55:47, total cpu=0:00:02.2, real=0:00:02.0, peak res=1710.1M, current mem=1697.0M)
+[10/23 14:55:47     12s] Set top cell to cpu_sys_emep_top.
+[10/23 14:55:47     12s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/23 14:55:47     12s] late library set: default_emulate_libset_max
+[10/23 14:55:47     12s] early library set: default_emulate_libset_min
+[10/23 14:55:47     12s] Completed consistency checks. Status: Successful
+[10/23 14:55:47     12s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/23 14:55:47     12s] late library set: default_emulate_libset_max
+[10/23 14:55:47     12s] early library set: default_emulate_libset_min
+[10/23 14:55:47     12s] Completed consistency checks. Status: Successful
+[10/23 14:55:47     12s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1724.5M, current mem=1724.5M)
+[10/23 14:55:47     12s] Building hierarchical netlist for Cell cpu_sys_emep_top ...
+[10/23 14:55:47     12s] ***** UseNewTieNetMode *****.
+[10/23 14:55:48     14s] *** Netlist is unique.
+[10/23 14:55:48     14s] ** info: there are 5308 modules.
+[10/23 14:55:48     14s] ** info: there are 303355 stdCell insts.
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] *** Memory Usage v#1 (Current mem = 2369.195M, initial mem = 626.484M) ***
+[10/23 14:55:48     14s] Set Default Input Pin Transition as 0.1 ps.
+[10/23 14:55:48     14s] Extraction setup Started 
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:48     14s] Summary of Active RC-Corners : 
+[10/23 14:55:48     14s]  
+[10/23 14:55:48     14s]  Analysis View: default_emulate_view
+[10/23 14:55:48     14s]     RC-Corner Name        : default_emulate_rc_corner
+[10/23 14:55:48     14s]     RC-Corner Index       : 0
+[10/23 14:55:48     14s]     RC-Corner Temperature : 25 Celsius
+[10/23 14:55:48     14s]     RC-Corner Cap Table   : ''
+[10/23 14:55:48     14s]     RC-Corner PostRoute Res Factor        : 1
+[10/23 14:55:48     14s]     RC-Corner PostRoute Cap Factor        : 1
+[10/23 14:55:48     14s]     RC-Corner PostRoute XCap Factor       : 1
+[10/23 14:55:48     14s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/23 14:55:48     14s] late library set: default_emulate_libset_max
+[10/23 14:55:48     14s] early library set: default_emulate_libset_min
+[10/23 14:55:48     14s] Completed consistency checks. Status: Successful
+[10/23 14:55:48     14s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2407.0M, current mem=2157.1M)
+[10/23 14:55:48     14s] Reading timing constraints file '/dev/null' ...
+[10/23 14:55:48     14s] Current (total cpu=0:00:14.8, real=0:00:39.0, peak res=2444.5M, current mem=2444.5M)
+[10/23 14:55:48     14s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[10/23 14:55:48     14s] Summary for sequential cells identification: 
+[10/23 14:55:48     14s]   Identified SBFF number: 94
+[10/23 14:55:48     14s]   Identified MBFF number: 0
+[10/23 14:55:48     14s]   Identified SB Latch number: 0
+[10/23 14:55:48     14s]   Identified MB Latch number: 0
+[10/23 14:55:48     14s]   Not identified SBFF number: 24
+[10/23 14:55:48     14s]   Not identified MBFF number: 0
+[10/23 14:55:48     14s]   Not identified SB Latch number: 0
+[10/23 14:55:48     14s]   Not identified MB Latch number: 0
+[10/23 14:55:48     14s]   Number of sequential cells which are not FFs: 32
+[10/23 14:55:48     14s] Total number of combinational cells: 316
+[10/23 14:55:48     14s] Total number of sequential cells: 150
+[10/23 14:55:48     14s] Total number of tristate cells: 10
+[10/23 14:55:48     14s] Total number of level shifter cells: 0
+[10/23 14:55:48     14s] Total number of power gating cells: 0
+[10/23 14:55:48     14s] Total number of isolation cells: 0
+[10/23 14:55:48     14s] Total number of power switch cells: 0
+[10/23 14:55:48     14s] Total number of pulse generator cells: 0
+[10/23 14:55:48     14s] Total number of always on buffers: 0
+[10/23 14:55:48     14s] Total number of retention cells: 0
+[10/23 14:55:48     14s] Total number of physical cells: 0
+[10/23 14:55:48     14s] List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX8 BUFX6
+[10/23 14:55:48     14s] Total number of usable buffers: 8
+[10/23 14:55:48     14s] List of unusable buffers: CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 CLKBUFX3
+[10/23 14:55:48     14s] Total number of unusable buffers: 8
+[10/23 14:55:48     14s] List of usable inverters: INVX1 INVX12 INVX2 INVX3 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+[10/23 14:55:48     14s] Total number of usable inverters: 10
+[10/23 14:55:48     14s] List of unusable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8
+[10/23 14:55:48     14s] Total number of unusable inverters: 9
+[10/23 14:55:48     14s] List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY4X4 DLY3X1
+[10/23 14:55:48     14s] Total number of identified usable delay cells: 8
+[10/23 14:55:48     14s] List of identified unusable delay cells:
+[10/23 14:55:48     14s] Total number of identified unusable delay cells: 0
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Deleting Cell Server Begin ...
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Deleting Cell Server End ...
+[10/23 14:55:48     14s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2474.3M, current mem=2474.3M)
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[10/23 14:55:48     14s] Summary for sequential cells identification: 
+[10/23 14:55:48     14s]   Identified SBFF number: 94
+[10/23 14:55:48     14s]   Identified MBFF number: 0
+[10/23 14:55:48     14s]   Identified SB Latch number: 0
+[10/23 14:55:48     14s]   Identified MB Latch number: 0
+[10/23 14:55:48     14s]   Not identified SBFF number: 24
+[10/23 14:55:48     14s]   Not identified MBFF number: 0
+[10/23 14:55:48     14s]   Not identified SB Latch number: 0
+[10/23 14:55:48     14s]   Not identified MB Latch number: 0
+[10/23 14:55:48     14s]   Number of sequential cells which are not FFs: 32
+[10/23 14:55:48     14s]  Visiting view : default_emulate_view
+[10/23 14:55:48     14s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = 0
+[10/23 14:55:48     14s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[10/23 14:55:48     14s]  Visiting view : default_emulate_view
+[10/23 14:55:48     14s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = 0
+[10/23 14:55:48     14s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[10/23 14:55:48     14s] TLC MultiMap info (StdDelay):
+[10/23 14:55:48     14s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + no RcCorner := 18.4ps
+[10/23 14:55:48     14s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + default_emulate_rc_corner := 18.4ps
+[10/23 14:55:48     14s]  Setting StdDelay to: 18.4ps
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Deleting Cell Server Begin ...
+[10/23 14:55:48     14s] 
+[10/23 14:55:48     14s] TimeStamp Deleting Cell Server End ...
+[10/23 14:55:49     14s] Extraction setup Started 
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] Summary of Active RC-Corners : 
+[10/23 14:55:49     14s]  
+[10/23 14:55:49     14s]  Analysis View: default_emulate_view
+[10/23 14:55:49     14s]     RC-Corner Name        : default_emulate_rc_corner
+[10/23 14:55:49     14s]     RC-Corner Index       : 0
+[10/23 14:55:49     14s]     RC-Corner Temperature : 125 Celsius
+[10/23 14:55:49     14s]     RC-Corner Cap Table   : ''
+[10/23 14:55:49     14s]     RC-Corner PostRoute Res Factor        : 1
+[10/23 14:55:49     14s]     RC-Corner PostRoute Cap Factor        : 1
+[10/23 14:55:49     14s]     RC-Corner PostRoute XCap Factor       : 1
+[10/23 14:55:49     14s] Extraction setup Started 
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     14s] Summary of Active RC-Corners : 
+[10/23 14:55:49     14s]  
+[10/23 14:55:49     14s]  Analysis View: default_emulate_view
+[10/23 14:55:49     14s]     RC-Corner Name        : default_emulate_rc_corner
+[10/23 14:55:49     14s]     RC-Corner Index       : 0
+[10/23 14:55:49     14s]     RC-Corner Temperature : 125 Celsius
+[10/23 14:55:49     14s]     RC-Corner Cap Table   : ''
+[10/23 14:55:49     14s]     RC-Corner PostRoute Res Factor        : 1
+[10/23 14:55:49     14s]     RC-Corner PostRoute Cap Factor        : 1
+[10/23 14:55:49     14s]     RC-Corner PostRoute XCap Factor       : 1
+[10/23 14:55:49     14s] Extraction setup Started 
+[10/23 14:55:49     14s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] eee: Trim Metal Layers: { }
+[10/23 14:55:49     15s] Summary of Active RC-Corners : 
+[10/23 14:55:49     15s]  
+[10/23 14:55:49     15s]  Analysis View: default_emulate_view
+[10/23 14:55:49     15s]     RC-Corner Name        : default_emulate_rc_corner
+[10/23 14:55:49     15s]     RC-Corner Index       : 0
+[10/23 14:55:49     15s]     RC-Corner Temperature : 125 Celsius
+[10/23 14:55:49     15s]     RC-Corner Cap Table   : ''
+[10/23 14:55:49     15s]     RC-Corner PostRoute Res Factor        : 1
+[10/23 14:55:49     15s]     RC-Corner PostRoute Cap Factor        : 1
+[10/23 14:55:49     15s]     RC-Corner PostRoute XCap Factor       : 1
+[10/23 14:55:49     15s] <CMD> read_sdc /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc
+[10/23 14:55:49     15s] Current (total cpu=0:00:15.1, real=0:00:40.0, peak res=2474.9M, current mem=2354.3M)
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 8).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 9).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 10).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 11).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 12).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 13).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 14).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 15).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_pl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 16).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[3]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 17).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[2]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 18).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[1]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 19).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_emep_top/i_emep_top_clk_rst_gen/i_ds_port_pl_clk_prog_div/div_i[0]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 20).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_case_analysis' has been applied on hierarchical pin 'U_cpu_sys_top/U_cpu_subsys_core/U_ag101_core/atfrtc010/CTL/clk_sel' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 21).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1142):	Virtual clock 'HPC_CLK_VIR' is being created with no source objects. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 32).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1142):	Virtual clock 'GPIO_CLK_VIR' is being created with no source objects. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 33).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 36).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_00/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 37).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'create_generated_clock' has been applied on hierarchical pin 'U_cpu_sys_top/U_pcie_sw_clkrst_gen/U_CLK_BUF_04/Y' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 42).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[39]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[38]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[37]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] **WARN: (TCLCMD-1531):	'set_false_path' has been applied on hierarchical pin 'U_cpu_sys_top/U_gpio_glbl_mux/gpio_out_52_i[36]' (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] Message <TCLCMD-1531> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc, Line 115).
+[10/23 14:55:49     15s] 
+[10/23 14:55:49     15s] Number of path exceptions in the constraint file = 137
+[10/23 14:55:49     15s] INFO (CTE): Reading of timing constraints file /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc completed, with 23 WARNING
+[10/23 14:55:49     15s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2371.3M, current mem=2371.3M)
+[10/23 14:55:49     15s] Current (total cpu=0:00:15.3, real=0:00:40.0, peak res=2474.9M, current mem=2371.3M)
+[10/23 14:55:49     15s] <CMD> report_clock_timing -type summary > $run_dir/clock_summary.rpt
+[10/23 14:55:49     15s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/23 14:55:49     15s] AAE DB initialization (MEM=2794.65 CPU=0:00:00.0 REAL=0:00:00.0) 
+[10/23 14:55:49     15s] #################################################################################
+[10/23 14:55:49     15s] # Design Name: cpu_sys_emep_top
+[10/23 14:55:49     15s] # Design Mode: 65nm
+[10/23 14:55:49     15s] # Analysis Mode: MMMC OCV 
+[10/23 14:55:49     15s] # Parasitics Mode: No SPEF/RCDB 
+[10/23 14:55:49     15s] # Signoff Settings: SI Off 
+[10/23 14:55:49     15s] #################################################################################
+[10/23 14:55:54     19s] Topological Sorting (REAL = 0:00:01.0, MEM = 2937.0M, InitMEM = 2937.0M)
+[10/23 14:55:54     19s] Start delay calculation (fullDC) (1 T). (MEM=2937.03)
+[10/23 14:55:54     19s] eee: Trim Metal Layers: { }
+[10/23 14:55:54     19s] eee: Trim Metal Layers: { }
+[10/23 14:55:54     19s] eee: Trim Metal Layers: { }
+[10/23 14:55:54     19s] eee: Trim Metal Layers: { }
+[10/23 14:55:54     19s] Start AAE Lib Loading. (MEM=2937.03)
+[10/23 14:55:54     19s] End AAE Lib Loading. (MEM=2956.11 CPU=0:00:00.0 Real=0:00:00.0)
+[10/23 14:55:54     19s] End AAE Lib Interpolated Model. (MEM=2956.11 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/23 14:56:11     37s] End Timing Check Calculation. (CPU Time=0:00:01.2, Real Time=0:00:01.0)
+[10/23 14:56:11     37s] End delay calculation. (MEM=3324.91 CPU=0:00:15.1 REAL=0:00:15.0)
+[10/23 14:56:11     37s] End delay calculation (fullDC). (MEM=3324.91 CPU=0:00:17.5 REAL=0:00:17.0)
+[10/23 14:56:11     37s] *** CDM Built up (cpu=0:00:21.8  real=0:00:22.0  mem= 3324.9M) ***
+[10/23 14:56:15     40s] <CMD> set_global report_timing_format {hpin cell arc slew load delay arrival}
+[10/23 14:56:15     40s] <CMD> check_timing -verbose -type {loops inputs endpoints clocks constant_collision clock_gating_inferred clock_clipping} -include_warning clocks_masked_by_another_clock > $run_dir/check_timing_verbose.rpt
+[10/23 14:56:15     41s] <CMD> check_timing -check_only {clock_crossing} -verbose > $run_dir/clock_crossings.rpt
+[10/23 14:56:15     41s] <CMD> report_clocks -groups > $run_dir/report_clock_groups.rpt
+[10/23 14:56:15     41s] <CMD> report_constraint -all_violators > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_23Oct2025/run_1/report_allViolators.rpt
+[10/23 14:56:17     43s] Loading  (cpu_sys_emep_top)
+[10/23 14:56:17     43s] Traverse HInst (cpu_sys_emep_top)
+[10/23 15:00:04     49s] <CMD> report_timing
