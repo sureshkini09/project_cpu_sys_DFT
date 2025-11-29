@@ -1,0 +1,123 @@
+
+ 	 Check Design Report (c)
+	 ------------------- 
+No subdesign's name is greater than 1.5k in length.
+
+ Feedthrough Module(s)
+ -------------------------
+design 'cpu_sys_emep_top' has the following feed through module(s) 
+Total number of feed through modules in design 'cpu_sys_emep_top' : 4
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'cpu_sys_emep_top'
+
+No empty modules in design 'cpu_sys_emep_top'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+design 'cpu_sys_emep_top' has the following unloaded sequential elements
+Total number of unloaded sequential elements in design 'cpu_sys_emep_top' : 65
+
+design 'cpu_sys_emep_top' has the following unloaded port(s)
+Total number of unloaded ports in design 'cpu_sys_emep_top' : 438
+
+ Unloaded Combinational Pin(s)
+ -------------------------------
+design 'cpu_sys_emep_top' has the following unloaded combinational elements
+Total number of unloaded combinational elements in design 'cpu_sys_emep_top' : 2280
+
+ Assigns
+ ------- 
+Total number of assign statements in design 'cpu_sys_emep_top' : 3496
+
+ ------------------------
+No undriven combinational pin in 'cpu_sys_emep_top'
+
+No undriven sequential pin in 'cpu_sys_emep_top'
+
+No undriven hierarchical pin in 'cpu_sys_emep_top'
+
+No undriven port in 'cpu_sys_emep_top'
+
+--------------------------
+
+No multidriven combinational pin in 'cpu_sys_emep_top'
+
+No multidriven sequential pin in 'cpu_sys_emep_top'
+
+No multidriven hierarchical pin in 'cpu_sys_emep_top'
+
+No multidriven ports in 'cpu_sys_emep_top'
+
+No multidriven unloaded nets in 'cpu_sys_emep_top'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'cpu_sys_emep_top'
+
+design 'cpu_sys_emep_top' has the following constant input sequential pin(s)
+Total number of constant sequential pins in design 'cpu_sys_emep_top' : 18882
+
+No constant hierarchical pin(s) in design 'cpu_sys_emep_top'
+
+No constant connected ports in design 'cpu_sys_emep_top'
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'cpu_sys_emep_top'
+design 'cpu_sys_emep_top' has the following preserved sequential instance(s)
+Total number of preserved sequential instances in design 'cpu_sys_emep_top' : 28
+No preserved hierarchical instance(s) in design 'cpu_sys_emep_top'
+
+  Physical only instances(s)
+  ----------------
+No physical only instance(s) in design 'cpu_sys_emep_top'
+
+  Logical only instance(s) and linked libcells
+    -----------------------------------------
+design 'cpu_sys_emep_top' has following logical only instance(s)
+Total number of logical only instances in design 'cpu_sys_emep_top' : 303355
+
+design 'cpu_sys_emep_top' has the following logical only libcells linked to above instance(s)
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+              Name                       Total 
+-----------------------------------------------
+Unresolved References                         0
+Empty Modules                                 0
+Unloaded Port(s)                            438
+Unloaded Sequential Pin(s)                   65
+Unloaded Combinational Pin(s)              2280
+Assigns                                    3496
+Undriven Port(s)                              0
+Undriven Leaf Pin(s)                          0
+Undriven hierarchical pin(s)                  0
+Multidriven Port(s)                           0
+Multidriven Leaf Pin(s)                       0
+Multidriven hierarchical Pin(s)               0
+Multidriven unloaded net(s)                   0
+Constant Port(s)                              0
+Constant Leaf Pin(s)                      18882
+Constant hierarchical Pin(s)                  0
+Preserved leaf instance(s)                   28
+Preserved hierarchical instance(s)            0
+Feedthrough Modules(s)                        4
+Libcells with no LEF cell                     0
+Physical (LEF) cells with no libcell          0
+Subdesigns with long module name              0
+Physical only instance(s)                     0
+Logical only instance(s)                 303355
+
+  Done Checking the design.

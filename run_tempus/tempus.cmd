@@ -17,11 +17,9 @@ set_global timing_apply_default_primary_input_assertion false
 read_verilog /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.v
 set_top_module cpu_sys_emep_top
 read_sdc /home/01fe21bec255/DFT_LAB/project_cpu_sys/design_dir/cpu_sys.sdc
-report_clock_timing -type summary > $report_dir/clock_summary.rpt
-set_global report_timing_format {hpin cell arc slew load delay arrival}
-check_timing -verbose -type {loops inputs endpoints clocks constant_collision clock_gating_inferred clock_clipping} -include_warning clocks_masked_by_another_clock > $report_dir/check_timing_verbose.rpt
-check_timing -check_only {clock_crossing} -verbose > $report_dir/clock_crossings.rpt
-report_clocks -groups > $report_dir/report_clock_groups.rpt
-report_constraint -all_violators > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_18oct2025/report_allViolators.rpt
-stop_gui
-exit
+#report_clock_timing -type summary > $report_dir/clock_summary.rpt
+#set_global report_timing_format {hpin cell arc slew load delay arrival}
+#check_timing -verbose -type {loops inputs endpoints clocks constant_collision clock_gating_inferred clock_clipping} -include_warning clocks_masked_by_another_clock > $report_dir/check_timing_verbose.rpt
+#check_timing -check_only {clock_crossing} -verbose > $report_dir/clock_crossings.rpt
+#report_clocks -groups > $report_dir/report_clock_groups.rpt
+#report_constraint -all_violators > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_18oct2025/report_allViolators.rpt 

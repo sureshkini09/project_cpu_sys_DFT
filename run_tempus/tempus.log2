@@ -215,3 +215,160 @@ End delay calculation (fullDC). (MEM=3324.91 CPU=0:00:17.5 REAL=0:00:17.0)
 Loading  (cpu_sys_emep_top)
 Traverse HInst (cpu_sys_emep_top)
 <CMD> report_timing
+Path 1: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'EEP_PCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {EEP_PCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA                                     rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+**ERROR: (TCLCMD-981):	Unsupported extra argument '-npaths' in command 'report_timing'.
+**ERROR: (TCLCMD-981):	Unsupported extra argument '1' in command 'report_timing'.
+
+<CMD> report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+**ERROR: (TCLCMD-981):	Unsupported extra argument '-npaths' in command 'report_timing'.
+**ERROR: (TCLCMD-981):	Unsupported extra argument '1' in command 'report_timing'.
+
+<CMD> report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+**ERROR: (TCLCMD-981):	Unsupported extra argument '-path_full_only' in command 'report_timing'.
+
+<CMD> report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+Path 1: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'EEP_PCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {EEP_PCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA ->                                  rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+Path 1: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'SWCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {SWCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA ->                                  rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 10
+Path 1: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'SWCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {SWCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA ->                                  rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Path 2: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'EEP_PCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {EEP_PCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA ->                                  rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+
+Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>] [-output <filename>] [-tcl_list] [> <filename[.gz]>] [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+
+
+<CMD> report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+
+Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>] [-output <filename>] [-tcl_list] [> <filename[.gz]>] [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+
+
+<CMD> report_timing
+Path 1: VIOLATED Setup Check with Pin U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKB 
+Endpoint:   U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA (^) checked with  leading edge of 'EEP_PCLK'
+Beginpoint: pll0_cmu_ck_soc                                                  (^) triggered by  leading edge of 'SWCLK'
+Path Groups: {EEP_PCLK}
+Other End Arrival Time          0.000
+- Setup                         1.000
++ Phase Shift                   1.000
+= Required Time                 0.000
+- Arrival Time                 37.084
+= Slack Time                  -37.084
+     Clock Rise Edge                      0.000
+     = Beginpoint Arrival Time            0.000
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Pin                                                                                                  Cell                  Arc                Slew    Load   Delay   Arrival  
+                                                                                                                                                                           Time  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      pll0_cmu_ck_soc                                                                                      -                     pll0_cmu_ck_soc ^  0.004   0.036  -       0.000  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/clk_gate_undiv_clk/U_charb_clk_gate/ECK  TLATNTSCAX2           CK ^ -> ECK ^      0.037   0.001  0.215   0.215  
+      U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y                      OR2X1                 A ^ -> Y ^         74.743  5.106  36.869  37.084  
+      U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA                                     rf_2p_512d_76w_2m_4b  CLKA ^             0.000   5.106  0.000   37.084  
+      ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<CMD> stop_gui

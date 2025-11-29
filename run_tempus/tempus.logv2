@@ -343,3 +343,29 @@ environment variable TMPDIR is '/tmp/ssv_tmpdir_25163_wBTsqV'.
 [10/23 14:56:17     43s] Loading  (cpu_sys_emep_top)
 [10/23 14:56:17     43s] Traverse HInst (cpu_sys_emep_top)
 [10/23 15:00:04     49s] <CMD> report_timing
+[10/23 18:52:30    405s] <CMD> report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+[10/23 18:52:30    405s] **ERROR: (TCLCMD-981):	Unsupported extra argument '-npaths' in command 'report_timing'.
+**ERROR: (TCLCMD-981):	Unsupported extra argument '1' in command 'report_timing'.
+
+[10/23 18:52:46    406s] <CMD> report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+[10/23 18:52:46    406s] **ERROR: (TCLCMD-981):	Unsupported extra argument '-npaths' in command 'report_timing'.
+**ERROR: (TCLCMD-981):	Unsupported extra argument '1' in command 'report_timing'.
+
+[10/23 18:53:43    407s] <CMD> report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+[10/23 18:53:43    407s] **ERROR: (TCLCMD-981):	Unsupported extra argument '-path_full_only' in command 'report_timing'.
+
+[10/23 18:54:09    408s] <CMD> report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+[10/23 18:55:07    409s] <CMD> report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+[10/23 18:55:11    409s] <CMD> report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 10
+[10/23 18:55:37    410s] <CMD> report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+[10/23 18:55:37    410s] 
+[10/23 18:55:37    410s] Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>] [-output <filename>] [-tcl_list] [> <filename[.gz]>] [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+[10/23 18:55:37    410s] 
+[10/23 18:55:37    410s] 
+[10/23 18:55:40    410s] <CMD> report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+[10/23 18:55:40    410s] 
+[10/23 18:55:40    410s] Usage: report_net [-help] [-hier] [-max_fanout <int>] [-min_fanout <int>] [-output <filename>] [-tcl_list] [> <filename[.gz]>] [>> <filename[.gz]>] [-net <list_of_net_names> | -pin <list_of_pin_names>]
+[10/23 18:55:40    410s] 
+[10/23 18:55:40    410s] 
+[10/23 19:19:43    446s] <CMD> report_timing
+[10/23 19:26:32    456s] <CMD> stop_gui

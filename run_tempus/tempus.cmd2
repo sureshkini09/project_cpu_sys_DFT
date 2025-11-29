@@ -24,3 +24,13 @@ check_timing -check_only {clock_crossing} -verbose > $run_dir/clock_crossings.rp
 report_clocks -groups > $run_dir/report_clock_groups.rpt
 report_constraint -all_violators > /home/01fe21bec255/DFT_LAB/project_cpu_sys/reports/reports_23Oct2025/run_1/report_allViolators.rpt
 report_timing
+report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+report_timing -npaths 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_full_only -max_paths 1
+report_timing -nworst 1 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 1
+report_timing -nworst 10 -from {pll0_cmu_ck_soc} -to {U_emep_top/i_pcie4_rxbuf/rx_buf_x16_x16_U_pcie_ip_rx_buf_0_/CLKA} -path_type full -max_paths 10
+report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+report_net U_emep_top/i_emep_top_clk_rst_gen/i_ep_core_tl_clk_prog_div/i_clk_2or_inst/U1/Y -verbose
+report_timing
+stop_gui

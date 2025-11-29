@@ -1,0 +1,22 @@
+20c20
+< Total number of unloaded sequential elements in design 'cpu_sys_emep_top' : 65
+---
+> Total number of unloaded sequential elements in design 'cpu_sys_emep_top' : 11
+28c28
+< Total number of unloaded combinational elements in design 'cpu_sys_emep_top' : 2280
+---
+> Total number of unloaded combinational elements in design 'cpu_sys_emep_top' : 187
+60c60
+< Total number of constant sequential pins in design 'cpu_sys_emep_top' : 18882
+---
+> Total number of constant sequential pins in design 'cpu_sys_emep_top' : 103
+101,102c101,102
+< Unloaded Sequential Pin(s)                   65
+< Unloaded Combinational Pin(s)              2280
+---
+> Unloaded Sequential Pin(s)                   11
+> Unloaded Combinational Pin(s)               187
+112c112
+< Constant Leaf Pin(s)                      18882
+---
+> Constant Leaf Pin(s)                        103
