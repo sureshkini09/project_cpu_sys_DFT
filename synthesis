@@ -1,0 +1,105 @@
+set_db    common_ui    false
+
+## Top-module name
+set DESIGN "switch_logic"
+
+## Enabling Multi-threading
+set_attribute super_thread_servers {localhost} /
+set_attr max_cpus_per_server 8 /
+set_attr iopt_enable_parallelization true /
+
+## Report and Output directory
+shell mkdir -p REPORTS
+shell mkdir -p OUTPUTS
+set REPORTS_PATH [lpwd]/REPORTS
+set OUTPUTS_PATH [lpwd]/OUTPUTS
+
+## Reading of standard cell libraries
+set timing_libs /home/anandb/ultralite/tech/Cadence_RAKs/RAK_18.1_blockImplementation/LIBS/lib/max/slow.lib
+
+create_library_domain TIMING
+set_attribute library $timing_libs [find /libraries -library_domain TIMING]
+check_library
+set lef_files [list "/home/anandb/ultralite/tech/Cadence_RAKs/RAK_18.1_blockImplementation/LIBS/lef/gsclib045.fixed2.lef"]
+set_attr lef_library $lef_files
+ 
+## Reading of RTL files
+set hdl_search_path "/home/anandb/ultralite/switch_logic/switch_logic/rtl"
+source rtl_filelist.tcl 
+set_attr hdl_search_path $hdl_search_path
+read_hdl -v2001 -library WORK_verilog $rtl_filelist_verilog
+
+## Enabling ICGs in design
+set_attr lp_insert_clock_gating true /
+
+## Elaboration of design
+elaborate $DESIGN
+
+## Attributes related to ICGs
+set CLOCK_GATING_CELL "TLATNTSCAX6"
+set_attr lp_clock_gating_cell [find /libraries/library_domains/TIMING -libcell ${CLOCK_GATING_CELL}] /designs/${DESIGN}
+set_attr lp_clock_gating_prefix ${DESIGN}_RC_CG /
+set_attr lp_clock_gating_min_flops 16 /designs/${DESIGN}
+set_attr lp_clock_gating_infer_enable false
+
+## Timing Constraints (SDC)
+read_sdc /home/anandb/ultralite/switch_logic/switch_logic/sdc/switch_logic.sdc
+
+## Report Initial Timing Reports
+set stage "INITIAL"
+check_design -all > ${REPORTS_PATH}/check_design_${stage}.rpt
+report timing -lint -verbose > ${REPORTS_PATH}/check_timing_${stage}.rpt
+
+## Generic step
+syn_gen
+
+## Mapping step
+syn_map
+
+## Remove assign statements
+remove_assigns_without_optimization  -verbose -dont_skip_unconstrained_paths -ignore_preserve_setting -no_buffers_use_inverters -ignore_preserve_map_size_ok
+
+## Incremental step
+syn_opt 
+
+## Uniquifying the design
+edit_netlist uniquify "/designs/$DESIGN" 
+
+## Report Final Timing Reports
+set stage "INCREMENTAL"
+check_design -all > ${REPORTS_PATH}/check_design_${stage}.rpt
+report timing -lint -verbose > ${REPORTS_PATH}/check_timing_${stage}.rpt
+
+write_hdl ${DESIGN} > ${OUTPUTS_PATH}/${DESIGN}.vg.gz
+generate_report -outdir ${REPORTS_PATH} -tag ${stage}
+report summary > ${REPORTS_PATH}/${DESIGN}Timing_Summary${stage}.rpt
+
+# exit
+set_db init_lib_search_path ../lib/
+set_db init_hdl_search_path ../rtl/
+read_libs slow_vdd1v0_basicCells.lib
+
+read_hdl counter.v
+elaborate
+read_sdc ../constraints/constraints_top.sdc
+
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+
+syn_generic
+syn_map
+syn_opt
+
+#reports
+report_timing > reports/report_timing.rpt
+report_power  > reports/report_power.rpt
+report_area   > reports/report_area.rpt
+report_qor    > reports/report_qor.rpt
+
+
+
+#Outputs
+write_hdl > outputs/counter_netlist.v
+write_sdc > outputs/counter_sdc.sdc
+write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > outputs/delays.sdf
